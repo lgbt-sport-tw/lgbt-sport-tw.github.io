@@ -187,9 +187,16 @@
 
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+    (function($){
+        $(function(){
+            $('.carousel').carousel({
+                interval: 5000 //changes the speed
+            });
+            $('body').on('click', 'a[href=#]', function(){
+                return false;
+            });
+        });
+    })(jQuery);
     </script>
 
 </body>
