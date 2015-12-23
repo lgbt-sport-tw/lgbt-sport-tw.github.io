@@ -105,10 +105,6 @@ hr {
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
-}
-
-footer p {
-    margin: 0;
     padding: 50px 0;
 }
 
@@ -189,4 +185,15 @@ footer p {
         display: table;
         clear: both;
     }
+}
+
+.footer-links {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    display: inline-block;
+    font-size: 0.9em;
+    margin-right: 2em;
 }
